@@ -6,7 +6,7 @@ class Categoria implements crud{
  
     public function __construct($id=false){
       if($id){
-      $sql     = "SELECT * FROM produtos WHERE id=?";
+      $sql     = "SELECT * FROM categoria WHERE id=?";
       $conexao = DB::conexao();
       $stmt    = $conexao->prepare($sql);
       $stmt->bindParam(1,$id,PDO::PARAM_INT);
@@ -33,8 +33,9 @@ class Categoria implements crud{
     }
   
     public function adicionar(){} 
-    public function listar(){} 
+    public static function listar(){} 
     public function atualizar(){} 
     public function excluir(){} 
 }
+
 ?>
