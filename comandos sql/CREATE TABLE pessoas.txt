@@ -1,14 +1,10 @@
 
 //criar tabelas
-CREATE TABLE pessoas(
-    id            int PRIMARY KEY auto_increment,
-    nome          varchar(30),
-    nascimento    date,
-    sexo          char(1),
-    peso          float,
-    altura        float,
-    nacionalidade varchar(20)
-);
+CREATE TABLE Vendedores(
+    id              int PRIMARY KEY auto_increment,
+    ncadastro       varchar(30),
+    nome            varchar(30)
+    );
 
 //inserir dados
 INSERT INTO pessoas 
